@@ -3,7 +3,7 @@ import alchemy
 
 
 def ft_sacred_scroll():
-    print("=== Sacred Scroll Mastery ===\n")
+    print("\n=== Sacred Scroll Mastery ===\n")
     print("Testing direct module access:")
     print(
         f"alchemy.elements.create_fire(): {alchemy.elements.create_fire()}"
@@ -20,7 +20,7 @@ def ft_sacred_scroll():
 
     print("\nTesting package-level access (controlled by __init__.py):")
     print(f"alchemy.create_fire(): {alchemy.create_fire()}")
-    print(f"alchemy.water(): {alchemy.create_water()}")
+    print(f"alchemy.create_water(): {alchemy.create_water()}")
 
     try:
         alchemy.create_earth()
