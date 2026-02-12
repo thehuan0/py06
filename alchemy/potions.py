@@ -4,21 +4,21 @@ from alchemy.elements import (
     )
 
 
-def healing_potion():
+def healing_potion() -> str:
     return f"Healing potion brewed with {create_fire()} and {create_water()}"
 
 
-def strength_potion():
+def strength_potion() -> str:
     return f"Strength potion brewed with {create_earth()} and {create_fire()}"
 
 
-def invisibility_potion():
+def invisibility_potion() -> str:
     return (
         f"Invisibility potion brewed with {create_air()} and {create_water()}"
         )
 
 
-def wisdom_potion():
+def wisdom_potion() -> str:
     results = (
         f"{create_air()}, {create_earth()}, "
         f"{create_fire()} and {create_water()}"
